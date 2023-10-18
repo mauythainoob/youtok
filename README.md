@@ -21,6 +21,8 @@ This phase is when we download a Tiktok video.
 #### Compilation
 This phase is when we create a compilation. 
 
+You can run the example.ipynb to get a feel of how it all works.
+
 **NOTE:** All videos, downloaded and created compilations, are stored locally.
 
 ## Requirements

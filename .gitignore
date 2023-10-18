@@ -1,0 +1,4 @@
+**/__pache__/
+*.pyc
+.env
+venv

@@ -22,21 +22,21 @@ logger = SingletonLogger()
 
 
 @typechecked
-def number_of_records_of_channel(channel_name: str) -> int:
+def number_of_records_of_channel(query: str) -> int:
     """
-    Returns the number of records associated with a specific channel name.
+    Returns the number of records associated with a specific query.
 
     Args:
-        channel_name (str): The name of the channel for which you want to count records.
+        query (str): The query for which you want to count records.
 
     Returns:
-        int: The number of records associated with the specified channel name.
+        int: The number of records associated with the specified query.
     """
     return len(
         pb.search_multiple_records(
             TiktokCollectionInfo.CollectionName,
             TiktokCollectionInfo.Fields.Query,
-            channel_name,
+            query,
         )
     )
 
